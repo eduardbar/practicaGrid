@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    display: grid;
+    grid-template: repeat(16, 1fr) / repeat(20, 1fr);
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    gap: 15px;
+    padding: 20px 80px;
+    grid-template-areas:
+      "iluminacion iluminacion iluminacion iluminacion iluminacion iluminacion gps gps gps gps gps sesion sesion sesion emision emision emision emision emision emision"
+      "iluminacion iluminacion iluminacion iluminacion iluminacion iluminacion gps gps gps gps gps sesion sesion sesion emision emision emision emision emision emision"
+      "iluminacion iluminacion iluminacion iluminacion iluminacion iluminacion gps gps gps gps gps sesion sesion sesion emision emision emision emision emision emision"
+      "iluminacion iluminacion iluminacion iluminacion iluminacion iluminacion gps gps gps gps gps sesion sesion sesion emision emision emision emision emision emision"
+      "iluminacion iluminacion iluminacion iluminacion iluminacion iluminacion product product product product product product product product emision emision emision emision emision emision"
+      "altura altura altura face face face product product product product product product product product emision emision emision emision emision emision"
+      "altura altura altura face face face product product product product product product product product battery battery battery buceo buceo buceo"
+      "altura altura altura face face face product product product product product product product product battery battery battery buceo buceo buceo"
+      "altura altura altura face face face product product product product product product product product battery battery battery buceo buceo buceo"
+      "banda banda banda banda banda banda product product product product product product product product boton boton boton boton boton boton"
+      "banda banda banda banda banda banda product product product product product product product product boton boton boton boton boton boton"
+      "banda banda banda banda banda banda product product product product product product product product boton boton boton boton boton boton"
+      "chip chip chip chip siri siri bici bici precision precision precision precision flash flash gesto gesto gesto gesto gesto gesto"
+      "chip chip chip chip siri siri bici bici precision precision precision precision flash flash gesto gesto gesto gesto gesto gesto"
+      "chip chip chip chip siri siri bici bici precision precision precision precision flash flash gesto gesto gesto gesto gesto gesto"
+      "chip chip chip chip siri siri bici bici precision precision precision precision flash flash gesto gesto gesto gesto gesto gesto";
+  }
+  
+  .item {
+    background: #ececec;
+    border-radius: 30px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  
+  .item:first-child {
+    grid-area: iluminacion;
+  }
+  
+  .item:nth-child(2) {
+    grid-area: altura;
+  }
+  
+  .item:nth-child(3) {
+    grid-area: face;
+  }
+  
+  .item:nth-child(4) {
+    grid-area: banda;
+  }
+  
+  .item:nth-child(5) {
+    grid-area: chip;
+  }
+  
+  .item:nth-child(5) img {
+    object-fit: contain;
+  }
+  
+  .item:nth-child(6) {
+    grid-area: siri;
+  }
+  
+  .item:nth-child(7) {
+    grid-area: gps;
+  }
+  
+  .item:nth-child(8) {
+    grid-area: sesion;
+  }
+  
+  .item:nth-child(9) {
+    grid-area: product;
+  }
+  
+  .item:nth-child(10) {
+    grid-area: bici;
+  }
+  
+  .item:nth-child(11) {
+    grid-area: precision;
+  }
+  
+  .item:nth-child(12) {
+    grid-area: flash;
+  }
+  
+  .item:nth-child(13) {
+    grid-area: emision;
+  }
+  
+  .item:nth-child(14) {
+    grid-area: battery;
+  }
+  
+  .item:nth-child(15) {
+    grid-area: buceo;
+  }
+  
+  .item:nth-child(16) {
+    grid-area: boton;
+  }
+  
+  .item:nth-child(17) {
+    grid-area: gesto;
+  }
